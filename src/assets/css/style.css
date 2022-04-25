@@ -1,0 +1,113 @@
+:root {
+    --primary: #335D65;
+    --light: #fff;
+    --dark: #141414;
+    --text_dark: #181818;
+    --text_light: #fff7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #f3f3f3;
+    color: var(--text_dark);
+}
+
+.cs_container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.cs_row {
+    display: flex;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.justify_content_end {
+    justify-content: flex-end;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.cs_date_picker_card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.205);
+    border-radius: 12px;
+    padding: 8px 15px 15px 15px;
+    overflow: hidden;
+    margin: 50px auto;
+    width: max-content;
+    max-width: 100%;
+    background-color: var(--light)
+}
+
+.rdrDateDisplayWrapper {
+    display: none !important;
+}
+
+.sec_heading {
+    padding: 16px 0;
+    font-size: 28px;
+}
+
+.cs_btn_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    user-select: none;
+    margin: 4px 6px;
+    padding: 6px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.cs_btn_main:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+@media only screen and (max-width:768px) {
+    .cs_date_picker_card {
+        padding: 6px;
+        margin: 30px auto;
+    }
+    .sec_heading {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .cs_date_picker_card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .cs_date_picker_card .rdrMonth {
+        width: 100%;
+    }
+    .cs_date_picker_card .rdrMonthAndYearPickers select {
+        width: 100%;
+        padding: 10px 24px 10px 10px;
+    }
+}
